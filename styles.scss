@@ -11,6 +11,10 @@ $lightBlue: #3882f6;
 	box-sizing: border-box;
 }
 
+// html {
+// 	width: 100%;
+// }
+
 body {
 	font-family: Roboto;
 	min-height: 100vh;
@@ -92,7 +96,6 @@ main {
 }
 
 .information {
-	width: 100vw;
 	text-align: center;
 	padding: 2rem 5rem 3rem;
 	background-color: $white;
