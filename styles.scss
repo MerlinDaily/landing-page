@@ -1,12 +1,173 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap");
 
 $darkBlue: #1f2937;
-$black: #1f2937;
 $white: #f9faf8;
 $grey: #e5e7eb;
 $lightBlue: #3882f6;
 
-.intro {
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: Roboto;
+	min-height: 100vh;
+}
+
+header {
+	padding: 1rem 12rem 2rem;
 	background-color: $darkBlue;
-	color: #1f2937;
+
+	nav {
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+
+	.nav-logo {
+		font-size: 24px;
+		text-decoration: none;
+		color: $white;
+	}
+
+	.nav-list {
+		display: flex;
+		gap: 1em;
+
+		li {
+			list-style: none;
+		}
+
+		a {
+			font-size: 18px;
+			text-decoration: none;
+			color: $grey;
+		}
+	}
+}
+
+.hero {
+	display: flex;
+	width: 100%;
+	padding: 4rem 0;
+	color: $white;
+	gap: 3rem;
+
+	&__text {
+		width: 50%;
+
+		h1 {
+			font-size: 48px;
+			font-weight: 900;
+			color: $white;
+		}
+
+		p {
+			font-size: 18px;
+			margin-bottom: 0.5rem;
+			color: $grey;
+		}
+	}
+
+	button {
+		padding: 0.5em 3em;
+		border-radius: 1em;
+		background-color: $lightBlue;
+		color: $white;
+	}
+
+	&__img {
+		width: 50%;
+		background-color: $grey;
+	}
+}
+
+main {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.information {
+	width: 100vw;
+	text-align: center;
+	padding: 2rem 5rem 3rem;
+	background-color: $white;
+	color: $darkBlue;
+
+	h2 {
+		font-size: 36px;
+	}
+
+	.figures {
+		// width: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 2rem 0;
+		gap: 2rem;
+		// border: 1px solid;
+
+		figure {
+			width: min-content;
+		}
+
+		img {
+			width: 150px;
+			border-radius: 10px;
+			border: 1px solid $lightBlue;
+			margin-bottom: 0.5em;
+		}
+	}
+}
+
+.quote {
+	background-color: $grey;
+	padding: 3rem 4rem;
+	font-size: 36px;
+	font-weight: 300;
+	color: $darkBlue;
+
+	.quote-box {
+		width: 70%;
+		margin: 0 auto;
+	}
+
+	.author {
+		font-weight: bold;
+		text-align: end;
+	}
+}
+
+.call {
+	background-color: $white;
+	padding: 4rem 5rem;
+	color: $white;
+
+	.call-board {
+		display: flex;
+		background-color: $lightBlue;
+		margin: 0 auto;
+		padding: 3rem 8rem;
+		border-radius: 10px;
+		gap: 7em;
+	}
+
+	button {
+		color: $white;
+		background-color: $lightBlue;
+		border: 1px solid $white;
+		border-radius: 1em;
+		padding: 1em 4em;
+	}
+}
+
+footer {
+	background-color: $darkBlue;
+	color: $grey;
+	text-align: center;
+	padding: 1.5rem;
 }
